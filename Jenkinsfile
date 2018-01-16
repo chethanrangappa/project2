@@ -6,7 +6,7 @@ pipeline{
         stage ('BUILD'){
 
 	steps {
-             sh   'ant war'
+             sh   'ant'
              
              sh ' cp -Rp /root/.jenkins/workspace/firstpip/dist/AntExample.war  /opt/apache-tomcat-8.5.24/webapps/'
             
